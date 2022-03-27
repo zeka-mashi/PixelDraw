@@ -1,0 +1,125 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+input,
+button,
+p,
+a,
+label {
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.center {
+    margin: 15px auto 20px auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    background: white;
+    min-width: 700px;
+    max-width: 700px;
+    min-height: 700px;
+    max-height: 700px;
+    border: 2px solid black;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.grid-item {
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 10px;
+}
+
+.error {
+    color: red;
+}
+
+.color {
+    background-color: black;
+}
+
+#size {
+    max-width: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#change-size {
+    background-color: rgb(0, 158, 0);
+    border: 1px solid darkgreen;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#change-size:hover {
+    background-color: green;
+}
+
+#clear {
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+#clear:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#color {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.color-wrapper {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    margin: 0px auto auto auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .content {
+        flex-direction: column;
+    }
+}
